@@ -1,0 +1,171 @@
+---
+title: "Lab 1"
+webr:
+  show-startup-message: true
+---
+::: {.hidden}
+\let\OldTexttt\texttt
+\renewcommand{\txt}[1]{\OldTexttt{\color{brown}{#1}}}
+:::
+
+# Introduction to R (I)
+
+## Command line
+
+You can type commands in the "Console".
+
+Type "2+2" and then hit "Shift+Return" or click the "Run Code" icon. You'll see that R can perform simple calculations, just like a calculator. The result, 4, will appear, with a "\[1\]" label indicating that this is the first element of the output. While this labeling may seem unnecessary for simple answers, it becomes quite helpful for more complex outputs.
+
+```{webr-r}
+2 + 2
+```
+
+## Comments
+
+In your code scripts, it's often useful to include text that isn't evaluated by **R**. This allows you to leave notes for yourself or a friend about what the next line of code does, its strengths and limitations, or any other information you want to remember. To add a comment, start the line with the hash symbol "\#". **R** will ignore everything on that line after the "\#".
+
+#### Example
+
+Let us try the rest of the fundamental arithmetic operations:
+
+```{webr-r}
+## subtraction operator: "-"
+
+## multiplication operator: "*"
+
+## division operator: "/"
+```
+
+## Mathematical functions
+
+You can use a variety of mathematical functions for calculations. For example, log() calculates the natural logarithm of a number.
+
+```{webr-r}
+log(42)
+```
+
+Parentheses serve two purposes in R: they group elements within calculations and denote the arguments passed to functions. The "arguments" of a function refer to the values provided as input. For example, in "log(3)", the "log()" function is applied to the argument "3".
+
+Similarly, we can also use "exp()" for the exponential function.
+
+```{webr-r}
+exp(12)
+```
+
+Another useful mathematical function is "sqrt()", which calculates the square root of a number. For example, "sqrt(4)" returns:
+
+```{webr-r}
+sqrt(4)
+```
+
+To calculate a value with an exponent, used the "\^" symbol. For example $4^3$ is written as:
+
+```{webr-r}
+4^3
+```
+
+#### Example
+
+Let us compute the following mathematical expression: $$\frac{1}{\sqrt{2\pi} 0.5}\log\left(\frac{(12-10.8)^2}{0.4}\right).$$
+
+```{webr-r}
+
+```
+
+## Defining objects
+
+In **R**, we can store information by assigning it to objects. For example, to create an object named "x" with a value of "24", you can write:
+
+```{webr-r}
+x <- 24
+```
+
+The part in the middle —a less-than sign followed by a hyphen, resembling a left-facing arrow— indicates to **R** that the value on the right should be assigned to the object on the left. After executing the command, whenever we use "x", it will be replaced by its value, "24". For instance, if we add "12" to "x", we should expect a result of "36".
+
+```{webr-r}
+x + 12
+```
+
+You can reassign a new value to a object. E.g.,
+
+```{webr-r}
+x <- 18
+```
+
+## Variable Names
+
+When defining variables (or objects), the choice of variable names in programming is crucial. Selecting clear and descriptive names for variables is vital for several reasons:
+
+-   **Readability and Understandability**: Clear and descriptive variable names enhance the readability and comprehension of your code.
+
+-   **Maintainability and Debugging**: Thoughtfully named variables simplify code maintenance and debugging processes.
+
+-   **Collaboration**: In a team setting, consistent and clear variable naming conventions are crucial for effective collaboration.
+
+-   **Self-Documentation**: Meaningful variable names serve as self-documentation, making the code more intuitive.
+
+-   **Code Reusability**: Adopting good variable naming practices supports greater code reusability.
+
+Sometimes, clear naming requires using multiple words in a variable name, but spaces are not allowed. A common approach is to separate words with underscores, as demonstrated previously, such as $\txt{morning\_temperature\_august}$.
+
+#### Example
+
+Let us assign relevant names to the following variables:
+
+| \#  |            Feature             | Value  |
+|:---:|:------------------------------:|:------:|
+|  1  | Body temperature in Fahrenheit |   98   |
+|  2  |    Number of shoes for Sam     |   11   |
+|  3  | Weight of a elephant in pounds | 12,050 |
+
+```{webr-r}
+# 1
+
+# 2
+
+# 3
+```
+
+## Lab Questions
+
+1.  Calculate the following math expressions.
+
+<!-- -->
+
+i)  $(23\times 6)+3$.
+ii) $13^3-1100$.
+iii) $\sqrt{81}/(3^3)$.
+
+```{webr-r}
+## i
+
+## ii
+
+## iii
+
+```
+
+2.  According to *Hamwi GJ. Therapy: changing dietary concepts. (American Diabetes Association)*, the ideal body weight equations for male and female are as follows: \begin{align*}
+    \text{Ideal Body Weight (Male)}=&106+6\times(\text{Height}-60\text{ in});\\
+    \text{Ideal Body Weight (Female)}=&100+5\times(\text{Height}-60\text{ in}).
+    \end{align*} Suppose a male student's height and weight are 71 inches and 155 pounds, respectively. Define variables (objects) with appropriate names to store these values, and then perform the following calculations.
+
+<!-- -->
+
+i)  Calculate the ideal body weight of the student.
+ii) Calculate the difference between the ideal body weight and actual body weight.
+iii) Calculate the squared difference between the ideal body weight and actual body weight.
+
+```{webr-r}
+## Variables
+
+## i
+
+## ii
+
+## iii
+
+```
+
+
+**Click [HERE](https://coursesite.lehigh.edu/mod/quiz/view.php?id=6174762){target="_blank"} to submit your answers.**

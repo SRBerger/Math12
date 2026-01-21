@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "MATH 012: R-Labs"
+  search: true
+  reader-mode: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Lab_1.qmd
+        text: Lab 1
+ 
+        
+  favicon: lehigh-icon.ico
+        
+  sidebar: 
+    - style: "floating"
+      contents: 
+        - section: "Lab Sessions"
+          contents:
+            - Lab_1.qmd
+           
+filters:
+  - webr
+      
+format:
+  html:
+    toc: true
+    css: styles.css
+    theme: sketchy
+
+editor: visual
+
