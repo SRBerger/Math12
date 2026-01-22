@@ -12,25 +12,25 @@ website:
         text: Home
       - href: Lab_1.qmd
         text: Lab 1
- 
-        
+      - href: Lab_2.qmd       # <--- I added this link for you
+        text: Lab 2           # <--- This is the button text
   favicon: lehigh-icon.ico
-        
-  sidebar: 
+  sidebar:
     - style: "floating"
-      contents: 
+      contents:
         - section: "Lab Sessions"
           contents:
             - Lab_1.qmd
-           
+            - Lab_2.qmd       # <--- I added this to the sidebar
+
 filters:
   - webr
-      
+
 format:
   html:
     toc: true
     css: styles.css
     theme: sketchy
+    embed-resources: true     # <--- Keeps the output easy to manage
 
 editor: visual
-
