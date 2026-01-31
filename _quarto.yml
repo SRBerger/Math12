@@ -14,6 +14,8 @@ website:
         text: Lab 1
       - href: Lab_2.qmd       # <--- I added this link for you
         text: Lab 2           # <--- This is the button text
+      - href: Lab_3.qmd       # <--- I added this link for you
+        text: Lab 3           # <--- This is the button text
   favicon: lehigh-icon.ico
   sidebar:
     - style: "floating"
@@ -22,6 +24,7 @@ website:
           contents:
             - Lab_1.qmd
             - Lab_2.qmd       # <--- I added this to the sidebar
+            - Lab_3.qmd
 
 filters:
   - webr
