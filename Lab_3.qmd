@@ -132,7 +132,7 @@ iv) Compare the IQRs of $\texttt{\color{brown}{SW}}$ and $\texttt{\color{brown}{
 
 <!-- -->
 
-2.  Let us recall the fomulas for the sample variance.
+2.  Let us recall the formulas for the sample variance.
 
 <!-- -->
 
@@ -142,10 +142,37 @@ i)  The sample variance can be computed from the following formula: $$s^2=\frac{
 
 ```
 
-ii) Additionally, we have learned an alternative formula for variance calculation (also known as the 'computing formula'): $$s^2=\frac{1}{n-1}\left\{\sum_{i=1}^nx_i^2-n\bar{x}^2\right\}.$$ Similar to the previous case, calculate the variance of $\texttt{\color{brown}{PL}}$ using this formula, based on the $\texttt{\color{brown}{mean()}}$, $\texttt{\color{brown}{sum()}}$, and $\texttt{\color{brown}{length()}}$ functions. Verify that your result matches the value provided in 1-ii.
+ii) Additionally, we have an alternative formula for variance calculation (also known as the 'computing formula'): $$s^2=\frac{1}{n-1}\left\{\sum_{i=1}^nx_i^2-n\bar{x}^2\right\}.$$ Similar to the previous case, calculate the variance of $\texttt{\color{brown}{PL}}$ using this formula, based on the $\texttt{\color{brown}{mean()}}$, $\texttt{\color{brown}{sum()}}$, and $\texttt{\color{brown}{length()}}$ functions. Verify that your result matches the value provided in 1-ii.
 
 ```{webr-r}
 
 ```
 
-**Click [HERE](https://coursesite.lehigh.edu/mod/quiz/view.php?id=5912613){target="_blank"} to submit your answers.**
+
+<!-- -->
+
+3.  Ride Wait Times.
+
+<!-- -->
+
+i) Some very enthusiastic Disney fans have collected the following data on average wait times per year for the ride \textit{Soarin' Around the World} at Epcot.  
+
+```{webr-r}
+Year = 2014:2025
+Wait.Time = c(40,60,51,48,42,40,33,34,23,25,24,20)
+Disney.Data = data.frame(Year,Wait.Time)
+print(Disney.Data)
+```
+
+ii) For the data given in part i, compute the mean and standard deviation of average wait times for this ride.
+```{webr-r}
+
+```
+
+iii) Make a time series plot of average wait times for \textit{Soarin' Around the World} between 2014 and 2025.  Be sure to include a title and labels for the x and y-axes.  
+```{webr-r}
+
+```
+
+
+**Click [HERE](https://coursesite.lehigh.edu/mod/quiz/view.php?id=6207408){target="_blank"} to submit your answers.**
