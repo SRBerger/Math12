@@ -15,7 +15,9 @@ website:
       - href: Lab_2.qmd       # <--- I added this link for you
         text: Lab 2           # <--- This is the button text
       - href: Lab_3.qmd       # <--- I added this link for you
-        text: Lab 3           # <--- This is the button text
+        text: Lab 3
+      - href: Lab_4.qmd       # <--- I added this link for you
+        text: Lab 4
   favicon: lehigh-icon.ico
   sidebar:
     - style: "floating"
@@ -23,8 +25,9 @@ website:
         - section: "Lab Sessions"
           contents:
             - Lab_1.qmd
-            - Lab_2.qmd       # <--- I added this to the sidebar
-            - Lab_3.qmd
+            - Lab_2.qmd 
+            - Lab_3.qmd 
+            - Lab_4.qmd
 
 filters:
   - webr
@@ -34,11 +37,10 @@ format:
     toc: true
     css: styles.css
     theme: sketchy
-    embed-resources: true
+    embed-resources: false
     include-in-header:
       text: |
         <link rel="stylesheet"
               href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
 
 editor: visual
