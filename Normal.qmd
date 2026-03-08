@@ -1,0 +1,25 @@
+---
+title: "Normal Probabilities"
+webr:
+  show-startup-message: true
+---
+
+
+::: {.hidden}
+\let\OldTexttt\texttt
+\renewcommand{\txt}[1]{\OldTexttt{\color{brown}{#1}}}
+:::
+
+# Computing Binomial Probabilities with **R** (I)
+You may use the following R Chunk below to compute normal distribution probabilities.  The functions you will need is pnorm().  BE SURE YOU STANDARDIZE NORMAL RANDOM VARIABLES BEFORE USING THIS FUNCTION.  
+
+
+```{webr-r}
+# Evaluating P(Z > 0)
+# Z ~ N(0,1)
+pnorm(0, lower.tail = FALSE)
+```
+
+
+
+

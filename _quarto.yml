@@ -24,6 +24,10 @@ website:
         text: Lab 6
       - href: Binom.qmd
         text: Binomial Probabilities
+      - href: Normal.qmd
+        text: Normal Probabilities
+      - href: Lab_7.qmd
+        text: Lab 7
   favicon: lehigh-icon.ico
   sidebar:
     - style: "floating"
@@ -37,6 +41,8 @@ website:
             - Lab_5.qmd
             - Lab_6.qmd
             - Binom.qmd
+            - Normal.qmd
+            - Lab_7.qmd
 
 filters:
   - webr
