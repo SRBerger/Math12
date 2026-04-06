@@ -1,0 +1,27 @@
+---
+title: "Computing Cutoffs"
+webr:
+  show-startup-message: true
+---
+
+
+::: {.hidden}
+\let\OldTexttt\texttt
+\renewcommand{\txt}[1]{\OldTexttt{\color{brown}{#1}}}
+:::
+
+# Computing Cutoffs for C.I/HT
+You may use the following R Chunk below to compute quantiles using qnorm or qt
+
+
+```{webr-r}
+# Checking that z_0.025 is 1.96
+abs(qnorm(0.025))
+
+# Compute a T-distribution cutoff
+abs(qt(0.025, df = 100))
+```
+
+
+
+
