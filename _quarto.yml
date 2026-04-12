@@ -34,6 +34,8 @@ website:
         text: Lab 9
       - href: Cutoffs.qmd
         text: Cutoffs
+      - href: Lab 10
+        text: Lab 10
   favicon: lehigh-icon.ico
   sidebar:
     - style: "floating"
@@ -52,6 +54,7 @@ website:
             - Lab_8.qmd
             - Lab_9.qmd
             - Cutoffs.qmd
+            - Lab_10.qmd
 
 filters:
   - webr
