@@ -38,6 +38,8 @@ website:
         text: Lab 10
       - href: Lab 11
         text: Lab 11
+      - href: Lab 12
+        text: Lab 12
   favicon: lehigh-icon.ico
   sidebar:
     - style: "floating"
@@ -58,6 +60,7 @@ website:
             - Cutoffs.qmd
             - Lab_10.qmd
             - Lab_11.qmd
+            - Lab_12.qmd
 
 filters:
   - webr
